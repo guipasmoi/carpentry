@@ -13,8 +13,11 @@ class App extends Component {
               <Header slot="header" connector={(store) => ""}>
                   <Title slot="default">Fucking Slots</Title>
               </Header>
+              <Header slot="header" connector={(store) => ""}>
+                  <Title slot="default">Fucking Slots 2</Title>
+              </Header>
               <GetStarted />
-              <p slot="footers">Footer</p>
+              <p slot="footer">Footer</p>
           </Layout>
         )
     }

@@ -15,7 +15,7 @@ const slotPropType = (slotNames) => (props, propName, componentName) => {
     const errors = [];
     const analyseNode = node => {
         if (slotNames.indexOf(node.props.slot || 'default') === -1) {
-            errors.push(`Invalid slot "${node.props.slot || "default" }" supplied to ${componentName}. Validation failed.`)
+            errors.push(`slot "${node.props.slot || "default" }" supplied to ${componentName}. Validation failed. Valid values are [${slotNames.join(',')}]`)
         }
     };
     if (Array.isArray(props.children)) {
