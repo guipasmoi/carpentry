@@ -10,10 +10,10 @@ class App extends Component {
     render() {
         return (
           <Layout>
-              <Header slot="header" connector={(store) => ""}>
+              <Header slot="header">
                   <Title slot="default">Fucking Slots</Title>
               </Header>
-              <Header slot="header" connector={(store) => ""}>
+              <Header slot="header">
                   <Title slot="default">Fucking Slots 2</Title>
               </Header>
               <GetStarted />
