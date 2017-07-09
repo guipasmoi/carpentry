@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Slot from './Slot';
-import withSlots from './withSlots';
+import Slot from '../lib/Slot';
+import withSlots from '../lib/withSlots';
 
 class Title extends Component {
     render() {
