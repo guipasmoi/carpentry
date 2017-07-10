@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
-import Slot from '../lib/Slot';
-import withSlots from '../lib/withSlots';
+import Slot, { slots } from '../lib/Slot';
 
-class Layout extends Component {
+export default class Layout extends Component {
+    static propTypes = { children: slots(['header', 'footer', 'default']) }
+
     render() {
         return (
           <div className="App">
-              <Slot name="header" fillWith={this.props.children} />
-              <Slot fillWith={this.props.children} />
-              <Slot name="footer" fillWith={this.props.children} />
+              <Slot.header fillWith={this.props.children} />
+              <Slot.default fillWith={this.props.children} />
+              <Slot.footer fillWith={this.props.children} />
           </div>
         );
     }
 }
 
-export default withSlots(Layout, 'header', 'footer');
+

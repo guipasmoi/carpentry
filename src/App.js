@@ -19,8 +19,8 @@ class App extends Component {
           <Layout>
               <GetStarted />
               <p slot="footer">Footer</p>
-              <Header slot="header" />
-              <Header slot="headers">
+              <Header slot="headers" />
+              <Header slot="header">
                   <Title slot="default">Fucking Slots 2</Title>
               </Header>
           </Layout>

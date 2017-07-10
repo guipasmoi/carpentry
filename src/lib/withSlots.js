@@ -36,7 +36,6 @@ export default function withSlots(MyComponent, ...slotNames) {
     ComponentWithSlots.propTypes = {
         children: slotPropType(slotNames.concat('default')),
     };
-    ComponentWithSlots.displayName = `${MyComponent.displayName || MyComponent.name || 'Component'}(withSlots)`;
     return ComponentWithSlots;
 }
 

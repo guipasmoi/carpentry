@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import Slot from '../lib/Slot';
+import Slot  from '../lib/Slot';
 import withSlots from '../lib/withSlots';
 
 class Title extends Component {
     render() {
         return (
           <h1>
-              <Slot fillWith={this.props.children} />
+              <Slot.default fillWith={this.props.children} />
           </h1>
         );
     }
